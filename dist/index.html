@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="py-10 px-5 font-poppins bg-slate-400">
+    <div class="card max-w-sm  py-3 px-6 mx-auto text-center bg-gradient-to-br from-violet-500 to-blue-500 overflow-hidden rounded-xl">
+        <div class="search flex mt-2 ">
+            <input class="flex-1 rounded-l-lg px-2 bg-slate-100 focus:outline-none" type="text" placeholder="Enter City Name" spellcheck="false">
+            <button class=" bg-white p-2 rounded-r-md hover:bg-slate-300" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+        </div>
+        <p id="error" class="text-red-600"> </p>
+        <div class="weather">
+            <img src="/images/rain.png" class="weather-icon mx-auto ">
+            <button class="unit-toggle" ><h1 class="temp text-5xl text-white cursor-default"> °C</h1></button>
+            
+            <h2 class="city text-3xl text-white cursor-default mb-2">Location</h2>
+            
+            <div class="details flex justify-evenly mt-16 ">
+                <div class="col flex p-2">
+                    <img class="h-11 w-11 " src="/images/humidity.png" >
+                    <div class="ml-2">
+                        <p class="humidity text-2xl cursor-default text-white"> 0%</p>
+                        <p class="cursor-default text-white">Humidity</p>
+                    </div>
+                </div>
+                <div class="col flex p-2">
+                    <img class="h-12 w-11" src="/images/wind.png" >
+                    <div class=" ml-2">
+                        <p class="wind text-2xl cursor-default text-white">0 km/h</p>
+                        <p class="cursor-default text-white">Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+     
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
